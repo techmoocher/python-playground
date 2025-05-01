@@ -138,9 +138,10 @@ def draw(main: Tk, render_canvas: Canvas, render_heart: Heart, render_frame=0):
 
 
 if __name__ == '__main__':
-    root = Tk()  
+    root = Tk()
+    root.title("Shining Heart")
     canvas = Canvas(root, bg = 'black', height = CANVAS_HEIGHT, width = CANVAS_WIDTH)
     canvas.pack()
-    heart = Heart()  
+    heart = Heart()
     draw(root, canvas, heart) 
     root.mainloop()
